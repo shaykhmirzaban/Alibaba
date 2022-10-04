@@ -1,0 +1,208 @@
+.pqr {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+
+  .heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+
+    img {
+      width: 50px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      color: #333;
+      padding: 0 0.7rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #313030;
+    }
+  }
+
+  .marketPlace {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+
+    .box1 {
+      //   width: 300px;
+      height: 100%;
+      background: url(../images/pqrimage.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-radius: 10px;
+      margin: 0 1rem;
+
+      h1 {
+        color: #fff;
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        font-weight: inherit;
+      }
+
+      .number {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+        .num1,
+        .num2,
+        .num3,
+        .num4 {
+          width: 110px;
+          height: 80px;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          outline: 2px dotted #fff;
+          background: #13032fe3;
+          border-radius: 10px;
+          margin: 0.4rem;
+
+          h3 {
+            font-size: 1.1rem;
+            padding: 0.3rem 0;
+          }
+
+          p {
+            font-size: 0.8rem;
+            text-align: center;
+          }
+        }
+      }
+      button {
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        margin: 2rem 0;
+        cursor: pointer;
+      }
+    }
+
+    .box2 {
+      height: 100%;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin: 0 1rem;
+      background: #fff;
+
+      h1 {
+        font-size: 1.5rem;
+        color: #333;
+        padding: 1rem;
+        font-weight: inherit;
+        padding-left: 0;
+      }
+
+      .inputArea {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .productName {
+          width: 100%;
+          margin: 1rem 0;
+
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+          }
+        }
+
+        .q {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1.5rem 0;
+
+          input {
+            width: 150px;
+            height: 40px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin: 0 0.5rem;
+          }
+          select {
+            width: 150px;
+            height: 40px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+
+      button {
+        width: 200px;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 1rem;
+        background: #13032f;
+        color: #fff;
+        cursor: pointer;
+        margin: 1rem 0;
+
+        &:hover {
+          background: #fff;
+          color: #13032f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .pqr .marketPlace {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pqr .marketPlace .box2 {
+    margin: 2rem 0;
+  }
+  .pqr .heading {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pqr .marketPlace .box2 {
+    width: 90%;
+  }
+}

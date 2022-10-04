@@ -1,0 +1,61 @@
+.justforyou {
+  width: 90%;
+  margin: 2rem auto;
+
+  .heading {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 1.7rem;
+      color: #333;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card1 {
+      margin: 0.5rem;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      border: 3px solid transparent;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .descripiton {
+        margin: 1rem 0;
+
+        p {
+          font-size: 0.9rem;
+          padding: 0.5rem 0;
+          color: #333;
+        }
+
+        h4 {
+          font-size: 1rem;
+          padding: 0.5rem 0;
+        }
+      }
+
+      &:hover {
+        border: 3px solid #13032f;
+      }
+    }
+  }
+}

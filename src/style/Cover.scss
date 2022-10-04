@@ -1,0 +1,154 @@
+.cover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+
+  .slider {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      font-size: 2rem;
+      border: none;
+      background: #d0cccc;
+      padding: 0.5rem;
+      border-radius: 50px;
+      margin: 0.5rem;
+      color: #13032f;
+      cursor: pointer;
+      //   transform: translateX(-300px);
+    }
+
+    img {
+      width: 85%;
+      border-radius: 25px;
+    }
+  }
+
+  .circle {
+    display: flex;
+    margin: 1rem 0;
+
+    .cir1,
+    .cir2,
+    .cir3,
+    .cir4,
+    .cir5,
+    .cir6 {
+      width: 25px;
+      height: 25px;
+      border-radius: 50px;
+      border: 2px solid #13032f;
+      margin: 0.2rem;
+    }
+  }
+
+  .boxes {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+      width: 200px;
+      height: 150px;
+      background: #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      border-radius: 10px;
+      margin: 0.5rem;
+      cursor: pointer;
+
+      img {
+        border-radius: 5px;
+        margin: .5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+
+      .focus {
+        width: 100%;
+        height: 30px;
+        font-size: 0.9rem;
+        border: none;
+        background-color: #f7863a;
+        border-radius: 20px;
+        color: #fff;
+        margin: 0.5rem 0;
+        margin-bottom: 0;
+      }
+
+      .notfocus {
+        width: 100%;
+        height: 30px;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 20px;
+        color: #000;
+        border: 2px solid;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .box2 {
+      button {
+        width: 100%;
+        height: 30px;
+        font-size: 0.9rem;
+        border: none;
+        background-color: #131212;
+        border-radius: 20px;
+        color: #fff;
+        margin: 0.5rem 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .cover {
+    width: 100%;
+
+    .slider {
+      width: 90%;
+
+      button {
+        font-size: 1rem;
+      }
+
+      img {
+        width: 85%;
+      }
+    }
+
+    .circle {
+      .cir1,
+      .cir2,
+      .cir3,
+      .cir4,
+      .cir5,
+      .cir6 {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

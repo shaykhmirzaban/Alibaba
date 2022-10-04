@@ -1,0 +1,48 @@
+.country {
+  width: 90%;
+  margin: 2rem auto;
+
+  .heading {
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+
+    h1 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem 0;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+      }
+      p {
+        padding: 0 1rem;
+      }
+
+      &:hover {
+        color: #40286b;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .country ul {
+        justify-content: center;
+    }
+}
